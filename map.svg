@@ -1,0 +1,275 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1020" font-family="sans-serif">
+  
+  <rect width="1200" height="1020" fill="#f5f0e8" rx="8"/>
+  
+  <!-- ===== 顶部：黑板 ===== -->
+  <rect x="15" y="10" width="600" height="80" fill="#2d5016" rx="4"/>
+  <text x="35" y="35" fill="#e8e0c8" font-size="16">📅 今日课表：数 语 英 物 化</text>
+  <text x="35" y="55" fill="#e8e0c8" font-size="13">📌 期中倒计时：3周 ｜ 期末：第12轮</text>
+  <text x="35" y="75" fill="#e8e0c8" font-size="12">🏫 高三十班 · 班主任：王老师</text>
+  
+  <!-- ===== 顶部：轨道 ===== -->
+  <text x="670" y="35" font-size="16" font-weight="bold">📊 班级氛围轨道</text>
+  <rect x="670" y="48" width="500" height="36" fill="#e8e0d0" rx="18"/>
+  <text x="685" y="70" font-size="12" fill="#666">-4</text>
+  <text x="745" y="70" font-size="12" fill="#666">-3</text>
+  <text x="805" y="70" font-size="12" fill="#666">-2</text>
+  <text x="865" y="70" font-size="12" fill="#666">-1</text>
+  <text x="925" y="70" font-size="12" fill="#666">0</text>
+  <text x="985" y="70" font-size="12" fill="#666">+1</text>
+  <text x="1045" y="70" font-size="12" fill="#666">+2</text>
+  <text x="1105" y="70" font-size="12" fill="#666">+3</text>
+  <text x="1165" y="70" font-size="12" fill="#666">+4</text>
+  <text x="650" y="92" font-size="12" fill="#3a7bd5">摆</text>
+  <text x="1180" y="92" font-size="12" fill="#d53a3a">卷</text>
+  
+  <!-- 轨道指针 -->
+  <polygon points="925,40 918,48 932,48" fill="#ff6b35"/>
+  <circle cx="925" cy="46" r="7" fill="none" stroke="#ff6b35" stroke-width="2"/>
+  
+  <!-- ===== 讲台 ===== -->
+  <rect x="15" y="100" width="970" height="26" fill="#c4a882" rx="3"/>
+  <text x="500" y="117" font-size="14" fill="#5a3e2b" text-anchor="middle" font-weight="bold">讲 台</text>
+  
+  <!-- ============================================================== -->
+  <!-- ===== 座位区：6列 × 5排 ===== -->
+  <!-- 列宽136px，组内间距8px，组间间距30px                         -->
+  <!-- 第1列:30  第2列:174  第3列:340  第4列:484  第5列:650  第6列:794 -->
+  <!-- 排高60px，排间距10px                                         -->
+  <!-- 第1排:145  第2排:215  第3排:285  第4排:355  第5排:425        -->
+  <!-- ============================================================== -->
+  
+  <!--
+    区域划分（右侧竖条标注，不侵入座位）：
+    - 学霸区（绿色）：第1-2排 · 第2-5列 → 共8个
+    - 松弛区（蓝色）：第4排第1-2列+第5-6列 + 第5排全部 → 共10个
+    - 普通区（灰色）：其余12个
+  -->
+  
+  <!-- ===== 第1排 (y=145) ===== -->
+  <!-- 1-1 普通 -->
+  <rect x="30" y="145" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="75" y1="145" x2="75" y2="205" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="120" y1="145" x2="120" y2="205" stroke="#bbb" stroke-width="1.5"/>
+  <!-- 1-2 学霸 -->
+  <rect x="174" y="145" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="219" y1="145" x2="219" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="264" y1="145" x2="264" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 1-3 学霸 -->
+  <rect x="340" y="145" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="385" y1="145" x2="385" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="430" y1="145" x2="430" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 1-4 学霸 -->
+  <rect x="484" y="145" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="529" y1="145" x2="529" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="574" y1="145" x2="574" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 1-5 学霸 -->
+  <rect x="650" y="145" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="695" y1="145" x2="695" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="740" y1="145" x2="740" y2="205" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 1-6 普通 -->
+  <rect x="794" y="145" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="839" y1="145" x2="839" y2="205" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="884" y1="145" x2="884" y2="205" stroke="#bbb" stroke-width="1.5"/>
+  
+  
+  <!-- ===== 第2排 (y=215) ===== -->
+  <!-- 2-1 普通 -->
+  <rect x="30" y="215" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="75" y1="215" x2="75" y2="275" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="120" y1="215" x2="120" y2="275" stroke="#bbb" stroke-width="1.5"/>
+  <!-- 2-2 学霸 -->
+  <rect x="174" y="215" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="219" y1="215" x2="219" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="264" y1="215" x2="264" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 2-3 学霸 -->
+  <rect x="340" y="215" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="385" y1="215" x2="385" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="430" y1="215" x2="430" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 2-4 学霸 -->
+  <rect x="484" y="215" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="529" y1="215" x2="529" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="574" y1="215" x2="574" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 2-5 学霸 -->
+  <rect x="650" y="215" width="136" height="60" fill="#c8e0c0" stroke="#5a8a4a" stroke-width="3" rx="4"/>
+  <line x1="695" y1="215" x2="695" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <line x1="740" y1="215" x2="740" y2="275" stroke="#5a8a4a" stroke-width="1.5"/>
+  <!-- 2-6 普通 -->
+  <rect x="794" y="215" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="839" y1="215" x2="839" y2="275" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="884" y1="215" x2="884" y2="275" stroke="#bbb" stroke-width="1.5"/>
+  
+  
+  <!-- ===== 第3排 (y=285) 全部普通 ===== -->
+  <rect x="30" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="75" y1="285" x2="75" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="120" y1="285" x2="120" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  <rect x="174" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="219" y1="285" x2="219" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="264" y1="285" x2="264" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  <rect x="340" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="385" y1="285" x2="385" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="430" y1="285" x2="430" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  <rect x="484" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="529" y1="285" x2="529" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="574" y1="285" x2="574" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  <rect x="650" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="695" y1="285" x2="695" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="740" y1="285" x2="740" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  <rect x="794" y="285" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="839" y1="285" x2="839" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="884" y1="285" x2="884" y2="345" stroke="#bbb" stroke-width="1.5"/>
+  
+  
+  <!-- ===== 第4排 (y=355) 两侧松弛 ===== -->
+  <!-- 4-1 松弛 -->
+  <rect x="30" y="355" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="75" y1="355" x2="75" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="120" y1="355" x2="120" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <!-- 4-2 松弛 -->
+  <rect x="174" y="355" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="219" y1="355" x2="219" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="264" y1="355" x2="264" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <!-- 4-3 普通 -->
+  <rect x="340" y="355" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="385" y1="355" x2="385" y2="415" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="430" y1="355" x2="430" y2="415" stroke="#bbb" stroke-width="1.5"/>
+  <!-- 4-4 普通 -->
+  <rect x="484" y="355" width="136" height="60" fill="#f0ece0" stroke="#bbb" stroke-width="2" rx="4"/>
+  <line x1="529" y1="355" x2="529" y2="415" stroke="#bbb" stroke-width="1.5"/>
+  <line x1="574" y1="355" x2="574" y2="415" stroke="#bbb" stroke-width="1.5"/>
+  <!-- 4-5 松弛 -->
+  <rect x="650" y="355" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="695" y1="355" x2="695" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="740" y1="355" x2="740" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <!-- 4-6 松弛 -->
+  <rect x="794" y="355" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="839" y1="355" x2="839" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="884" y1="355" x2="884" y2="415" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  
+  <!-- ===== 第5排 (y=425) 全部松弛 ===== -->
+  <rect x="30" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="75" y1="425" x2="75" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="120" y1="425" x2="120" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  <rect x="174" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="219" y1="425" x2="219" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="264" y1="425" x2="264" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  <rect x="340" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="385" y1="425" x2="385" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="430" y1="425" x2="430" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  <rect x="484" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="529" y1="425" x2="529" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="574" y1="425" x2="574" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  <rect x="650" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="695" y1="425" x2="695" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="740" y1="425" x2="740" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  <rect x="794" y="425" width="136" height="60" fill="#d0e8f0" stroke="#4a8a9a" stroke-width="2" rx="4"/>
+  <line x1="839" y1="425" x2="839" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  <line x1="884" y1="425" x2="884" y2="485" stroke="#4a8a9a" stroke-width="1.5"/>
+  
+  
+  <!-- ===== 右侧区域标签（竖条，不侵入座位） ===== -->
+  <!-- 学霸区标签（对应第1-2排） -->
+  <rect x="960" y="145" width="80" height="130" fill="#5a8a4a" rx="4"/>
+  <text x="1000" y="190" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">学霸</text>
+  <text x="1000" y="210" font-size="13" fill="#fff" text-anchor="middle">区</text>
+  <text x="1000" y="240" font-size="9" fill="#d4e8c8" text-anchor="middle">8座</text>
+  
+  <!-- 普通区标签（对应第3排） -->
+  <rect x="960" y="285" width="80" height="60" fill="#bbb" rx="4"/>
+  <text x="1000" y="315" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">普通</text>
+  <text x="1000" y="333" font-size="9" fill="#fff" text-anchor="middle">区</text>
+  
+  <!-- 松弛区标签（对应第4-5排） -->
+  <rect x="960" y="355" width="80" height="130" fill="#4a8a9a" rx="4"/>
+  <text x="1000" y="400" font-size="15" fill="#fff" text-anchor="middle" font-weight="bold">松弛</text>
+  <text x="1000" y="420" font-size="13" fill="#fff" text-anchor="middle">区</text>
+  <text x="1000" y="450" font-size="9" fill="#d4e8f0" text-anchor="middle">10座</text>
+  
+  <!-- ===== 同桌分组标记 ===== -->
+  <text x="98" y="138" font-size="10" fill="#999" text-anchor="middle">同桌A</text>
+  <text x="417" y="138" font-size="10" fill="#999" text-anchor="middle">同桌B</text>
+  <text x="722" y="138" font-size="10" fill="#999" text-anchor="middle">同桌C</text>
+  
+  <!-- ===== 后门 ===== -->
+  <rect x="30" y="495" width="900" height="16" fill="#8b7355" rx="3"/>
+  <text x="480" y="507" font-size="11" fill="#f5f0e8" text-anchor="middle">后 门</text>
+  
+  <!-- ============================================================== -->
+  <!-- ===== 玩家A面板 ===== -->
+  <!-- ============================================================== -->
+  <rect x="15" y="525" width="580" height="215" fill="#fff" stroke="#d53a3a" stroke-width="2" rx="8"/>
+  <rect x="15" y="525" width="580" height="28" fill="#d53a3a" rx="8"/>
+  <rect x="15" y="545" width="580" height="8" fill="#d53a3a"/>
+  <text x="305" y="544" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">🎯 玩家 A · 成绩派</text>
+  
+  <text x="35" y="575" font-size="12" font-weight="bold">📖 学生卡</text>
+  <!-- 第一行4个 -->
+  <rect x="35" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="93" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="151" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="209" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <!-- 第二行4个 -->
+  <rect x="35" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="93" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="151" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="209" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  
+  <text x="305" y="575" font-size="12" font-weight="bold">🎬 操作卡</text>
+  <!-- 第一行4个 -->
+  <rect x="305" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="363" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="421" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="479" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <!-- 第二行4个 -->
+  <rect x="305" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="363" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="421" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="479" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  
+  
+  <!-- ============================================================== -->
+  <!-- ===== 玩家B面板 ===== -->
+  <!-- ============================================================== -->
+  <rect x="605" y="525" width="580" height="215" fill="#fff" stroke="#3a7bd5" stroke-width="2" rx="8"/>
+  <rect x="605" y="525" width="580" height="28" fill="#3a7bd5" rx="8"/>
+  <rect x="605" y="545" width="580" height="8" fill="#3a7bd5"/>
+  <text x="895" y="544" font-size="14" fill="#fff" text-anchor="middle" font-weight="bold">🎯 玩家 B · 快乐派</text>
+  
+  <text x="625" y="575" font-size="12" font-weight="bold">📖 学生卡</text>
+  <rect x="625" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="683" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="741" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="799" y="583" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="625" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="683" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="741" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  <rect x="799" y="653" width="52" height="64" fill="#fff8f0" stroke="#d4c5a0" stroke-width="1.5" rx="3"/>
+  
+  <text x="895" y="575" font-size="12" font-weight="bold">🎬 操作卡</text>
+  <rect x="895" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="953" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="1011" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="1069" y="583" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="895" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="953" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="1011" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  <rect x="1069" y="653" width="52" height="64" fill="#e8f5e8" stroke="#7aaa7a" stroke-width="1.5" rx="3"/>
+  
+  
+  <!-- ===== 底部牌堆区 ===== -->
+  <rect x="15" y="755" width="1170" height="20" fill="#f0ece0" stroke="#ccc" stroke-width="1.5" rx="4"/>
+  <text x="600" y="769" font-size="11" fill="#666" text-anchor="middle">📦 牌堆：事件（黄）· 学生（红/蓝/灰）· 操作（绿）｜弃牌堆（共用）｜期末考试：第12轮</text>
+
+</svg>

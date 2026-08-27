@@ -1,0 +1,138 @@
+/* 拍学堂 PaiSchool - 前端样式（依赖 /common/client.css 的页面骨架） */
+
+body {
+	background: #dedad2;
+}
+
+aside {
+	width: 280px;
+	background: #f5f0e8;
+	border-left: 2px solid #8a8a8a;
+}
+
+/* ---------- 地图 ---------- */
+
+#mapwrap {
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	height: 1020px;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+#map {
+	position: absolute;
+	width: 1200px;
+	height: 1020px;
+}
+
+#map > img {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 1200px;
+	height: 1020px;
+	display: block;
+	user-select: none;
+	-webkit-user-drag: none;
+}
+
+/* ---------- 座位控制点（覆盖层） ---------- */
+
+.seat {
+	position: absolute;
+	border-radius: 3px;
+	cursor: default;
+	z-index: 10;
+}
+
+/* 空位：极淡的悬停可见高亮，平时几乎不遮挡底图 */
+.seat.empty {
+	background: rgba(255, 255, 255, 0.01);
+}
+
+/* 已被一方控制的座位：半透明阵营色 + 内描边 */
+.seat.grade {
+	background: rgba(213, 58, 58, 0.30);
+	box-shadow: inset 0 0 0 2px #d53a3a;
+}
+.seat.happy {
+	background: rgba(58, 123, 213, 0.30);
+	box-shadow: inset 0 0 0 2px #3a7bd5;
+}
+
+/* 控制点上叠加的小徽标（显示阵营字样） */
+.seat .badge {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	color: #fff;
+	text-shadow: 0 1px 2px #000a, 0 0 3px #0009;
+	pointer-events: none;
+}
+.seat.grade .badge { color: #ffd7d7; }
+.seat.happy .badge { color: #d7e6ff; }
+
+/* 当前可点击（本方回合的空座位）：金色呼吸描边 */
+#map.clickable .seat.action {
+	cursor: pointer;
+	box-shadow: inset 0 0 0 2px #ff6b35, 0 0 6px 1px rgba(255, 107, 53, 0.65);
+	animation: seat-pulse 1.2s ease-in-out infinite alternate;
+}
+@keyframes seat-pulse {
+	from { background-color: rgba(255, 107, 53, 0.08); }
+	to   { background-color: rgba(255, 107, 53, 0.22); }
+}
+.seat.action:hover {
+	filter: brightness(1.15);
+}
+
+/* 隐藏控制点开关：只藏覆盖层，保留底图 */
+#map.hide-pieces .seat { display: none; }
+
+/* ---------- 氛围轨道指针（由 play.js 定位到刻度 centerX） ---------- */
+
+.track-pointer {
+	position: absolute;
+	z-index: 12;
+	transform: translate(-7px, -4px);
+	transition: left 0.35s ease;
+	filter: drop-shadow(0 1px 2px #0006);
+	pointer-events: none;
+}
+
+/* ---------- 通用悬停热区（氛围轨道 / 卡牌槽位） ---------- */
+
+.hotspot {
+	position: absolute;
+	z-index: 9;
+	background: transparent;
+	cursor: help;
+}
+.hotspot:hover {
+	background: rgba(255, 200, 80, 0.14);
+	box-shadow: inset 0 0 0 1px rgba(255, 150, 40, 0.55);
+	border-radius: 3px;
+}
+
+/* ---------- 悬停提示 ---------- */
+
+#tooltip {
+	position: fixed;
+	z-index: 900;
+	max-width: 260px;
+	padding: 5px 9px;
+	border: 1px solid #999;
+	border-radius: 4px;
+	background: #fffef7;
+	color: #333;
+	font-size: 12px;
+	line-height: 17px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+	pointer-events: none;
+	white-space: pre-line;
+}

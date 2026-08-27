@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>卷摆高中 PaiSchool</title>
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/common/client.css?v=20260823v01">
+<link rel="stylesheet" href="play.css?v=20260823v01">
+<script defer src="/common/client.js?v=20260823v01"></script>
+<script defer src="data.js?v=20260823v01"></script>
+<script defer src="play.js?v=20260823v01"></script>
+</head>
+<body class="paischool">
+
+<header>
+	<div id="toolbar">
+		<details>
+			<summary><img src="/images/cog.svg"></summary>
+			<menu></menu>
+		</details>
+		<button class="table-btn" id="reset_btn" onclick="send_action('reset')" title="清空所有座位控制点，氛围归零（演示用）">🔄 重置演示</button>
+		<button class="table-btn" id="seats_toggle_btn" onclick="toggle_seats()" title="隐藏/显示座位控制点高亮层，便于查看底图">🙈 隐藏控制点</button>
+	</div>
+	<!-- #actions 与 #prompt 由 /common/client.js 自动注入 -->
+</header>
+
+<aside>
+	<div id="roles">
+		<div class="role" id="role_Grade">
+			<div class="role_name">玩家 A · 成绩派</div>
+			<div class="role_stat" id="grade_stat"></div>
+			<div class="role_user"></div>
+		</div>
+		<div class="role" id="role_Happy">
+			<div class="role_name">玩家 B · 快乐派</div>
+			<div class="role_stat" id="happy_stat"></div>
+			<div class="role_user"></div>
+		</div>
+	</div>
+	<div id="turn_info"></div>
+	<div id="log"></div>
+</aside>
+
+<main>
+	<div id="mapwrap">
+		<!-- 地图（map.svg）与座位控制点由 play.js 的 build_map() 构建 -->
+		<div id="map"></div>
+	</div>
+</main>
+
+<div id="tooltip" hidden></div>
+
+<footer id="status"></footer>
+
+</body>
+</html>

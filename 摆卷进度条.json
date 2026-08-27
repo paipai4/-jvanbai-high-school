@@ -1,0 +1,105 @@
+{
+  "track": {
+    "bar": {
+      "x": 670,
+      "y": 48,
+      "width": 500,
+      "height": 36,
+      "desc": "班级氛围轨道背景条（-4 到 +4）"
+    },
+    "ticks": [
+      {
+        "value": -4,
+        "x": 670,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 685,
+        "desc": "刻度 -4（摆烂极端）"
+      },
+      {
+        "value": -3,
+        "x": 730,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 745,
+        "desc": "刻度 -3"
+      },
+      {
+        "value": -2,
+        "x": 790,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 805,
+        "desc": "刻度 -2"
+      },
+      {
+        "value": -1,
+        "x": 850,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 865,
+        "desc": "刻度 -1"
+      },
+      {
+        "value": 0,
+        "x": 910,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 925,
+        "desc": "刻度 0（中立）"
+      },
+      {
+        "value": 1,
+        "x": 970,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 985,
+        "desc": "刻度 +1"
+      },
+      {
+        "value": 2,
+        "x": 1030,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 1045,
+        "desc": "刻度 +2"
+      },
+      {
+        "value": 3,
+        "x": 1090,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 1105,
+        "desc": "刻度 +3"
+      },
+      {
+        "value": 4,
+        "x": 1150,
+        "y": 48,
+        "width": 30,
+        "height": 36,
+        "centerX": 1165,
+        "desc": "刻度 +4（内卷极端）"
+      }
+    ],
+    "pointer": {
+      "x": 925,
+      "y": 40,
+      "desc": "当前指针位置（对应刻度 0，可左右移动）",
+      "shape": "triangle",
+      "points": "925,40 918,48 932,48"
+    },
+    "labels": {
+      "left": { "x": 650, "y": 92, "desc": "左侧文字 '摆' 的位置" },
+      "right": { "x": 1180, "y": 92, "desc": "右侧文字 '卷' 的位置" }
+    }
+  }
+}
